@@ -22,28 +22,34 @@ let country;
 let cost;
 let input = prompt('Вкажіть Вашу країну доставки');
 
-if (input === null || '') {
+if (!input) {
   alert('Error');
 } else {
-  switch ((input = input.toLowerCase())) {
-    case (country = 'китай'):
+  input = input.toLowerCase();
+  switch (input) {
+    case 'китай':
       cost = 100;
+      country = 'китай';
       break;
 
-    case (country = 'чилі'):
+    case 'чилі':
       cost = 250;
+      country = 'чилі';
       break;
 
-    case (country = 'австралія'):
+    case 'австралія':
       cost = 170;
+      country = 'австралія';
       break;
 
-    case (country = 'індія'):
+    case 'індія':
       cost = 80;
+      country = 'індія';
       break;
 
     case (country = 'ямайка'):
       cost = 120;
+      country = 'ямайка';
       break;
 
     default:

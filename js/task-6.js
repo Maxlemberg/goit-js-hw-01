@@ -10,12 +10,12 @@
 //prompt плюсовать к общей сумме не нужно, после чего снова пользователю предлагается ввести число в prompt.
 let total = 0;
 
-while (true) {
+while (input !== null) {
   let input = prompt('Введіть число');
-  if (input === null) {
-    alert('Відмінено!');
-    break;
-  }
+  //if (input === null) {
+  //  alert('Відмінено!');
+  //  break;
+  //}
   input = Number(input);
   const notANumber = Number.isNaN(input);
   if (notANumber) {
