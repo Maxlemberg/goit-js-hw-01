@@ -17,12 +17,12 @@ while (input !== null) {
   //  alert('Відмінено!');
   //  break;
   //}
-  input = Number(input);
-  const notANumber = Number.isNaN(input);
+  let num = Number(input);
+  const notANumber = Number.isNaN(num);
   if (notANumber) {
     alert('Було введено не число, введіть число!');
-    continue;
+  } else {
+    total += num;
   }
-  total += input;
 }
 alert(`Загальна сума чисел рівна ${total}`);
